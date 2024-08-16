@@ -1,0 +1,10 @@
+{# templates/ingredient/new.html.twig #}
+{% extends 'base.html.twig' %}
+{% block body %}
+<h1>{% if form.vars.value.id %} Modifier{% else %} Cr´eer{% endif %} un
+ Ingr´edient</h1>
+{{ form_start(form) }}
+{{ form_widget(form) }}
+<button class="btn">Enregistrer</button>
+{{ form_end(form) }}
+{% endblock %}

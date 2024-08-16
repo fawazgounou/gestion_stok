@@ -1,0 +1,19 @@
+{# templates/recette/index.html.twig #}
+{% extends 'base.html.twig' %}
+{% block body %}
+<h1>Liste des Recettes</h1>
+<table>
+<thead>
+<tr>
+<th>Nom</th>
+</tr>
+</thead>
+<tbody>
+{% for recette in recettes %}
+<tr>
+<td>{{ recette.nom }} </td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endblock %}
