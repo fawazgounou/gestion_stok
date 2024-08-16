@@ -1,24 +1,15 @@
 {# templates/ingredient/index.html.twig #}
 {% extends 'base.html.twig' %}
 {% block body %}
-<h1>Liste des Ingr´edients</h1>
-<table>
-<thead>
-<tr>
-<th>Nom</th>
-<th>Quantit´e</th>
-<th>Photo</th>
-</tr>
-</thead>
-<tbody>
-{% for ingredient in ingredients %}
-<tr>
-<td>{{ ingredient.nom }} </td>
-<td>{{ ingredient.quantit´e }} </td>
-<td><img src="{{ asset(ingredient.photo) }} " alt="{{
- ingredient.nom }} " width="100" /></td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
+	<h1>Liste des Ingr´edients</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Nom</th>
+				<th>Quantit´e</th>
+				<th>Photo</th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
 {% endblock %}
